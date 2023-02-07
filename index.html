@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <fieldset id="ramka">
+            <legend>
+                Podstawowe dane
+            </legend>
+            <label for="Name">Nazwa elementu:
+                <select name="" id="name">
+                    <optgroup   label="podstawowe">                    
+                        <option value="p1"> p1 </option>
+                        <option value="h1"> h1 </option>
+                        <option value="h2"> h2 </option>
+                        <option value="h3"> h3 </option>
+                        <option value="h4"> h4 </option>
+                        <option value="h5"> h5 </option>
+                        <option value="h6"> h6 </option>
+                     </optgroup>
+                        <optgroup label="znaczniki sekcji">
+                    <option value="div"> div </option>
+                    <option value="header"> header </option>
+                    <option value="main"> main </option>
+                    <option value="aside"> aside </option>
+                    <option value="section"> section </option>
+                    <option value="article"> article </option>
+                    <option value="footer"> footer </option>
+                        </optgroup>
+                </select>
+            </label>
+            <label for="text">Tekst w elemencie:
+                <input type="text" name="text" id="text">
+            </label>
+            <label for="data">Data w elemencie:
+                <input type="date">
+            </label>
+        </fieldset>
+        <fieldset id="ramka">
+            <legend>
+                Formatowanie bloku
+            </legend>
+            <label for="padding">Padding w elemencie: 0rem
+            <input type="range" id="padding" min="0" max="1" step="0.1"> 1rem
+        </label>
+            <label for="maringes">Margines elementu: 0rem
+            <input type="range" id="margines" min="0" max="1" step="0.1"> 1rem
+            </label>
+
+        </fieldset >
+        <fieldset id="ramka">
+            <legend>
+                Kolory
+            </legend>
+            <label for="color">Kolor czcionki:
+                <input type="color" id="color">
+            </label>
+            <label for="colorbg">Kolor tła elementu:
+                <input type="color" id="color2">
+            </label>
+        </fieldset>
+        <fieldset id="ramka">
+            <legend>
+                Formatowanie tekstu
+            </legend>
+            <fieldset id="ramka">
+                <legend>
+                    Odległość między literami(rem):
+                </legend>
+                <label for="odleglosc">
+                    <input type="number" value="0" min="0" max="1" step="0.1">rem
+                </label>
+            </fieldset>
+            <fieldset id="ramka">
+                <legend>
+                    wyrównanie tekstu
+                </legend>
+                <label for="lewa" >lewa:
+                    <input type="radio" name="wyrownanie" id="lewa" value="lewa" checked>
+                </label>
+                <label for="srodek">środek:
+                    <input type="radio" name="wyrownanie" id="srodek" value="srodek">
+                </label>
+                <label for="prawa">prawa:
+                    <input type="radio" name="wyrownanie" id="prawa" value="prawa">
+                </label>
+            </fieldset>
+            <fieldset id="ramka">
+                <legend>dekoracja tekstu</legend>
+                <label for="pod">
+                    podkreślenie:
+                    <input type="checkbox" id="pod">
+                </label>
+                <label for="prze">
+                    przekreślenie:
+                    <input type="checkbox" id="prze">
+                </label>
+                <label for="nad">
+                    nadkreślenie:
+                    <input type="checkbox" id="nad">
+                </label>
+            </fieldset>
+        </fieldset>
+        <div id="div_button">
+            <button>Utwórz</button>
+        </div>
+            </fieldset>
+    </fieldset>
+    
+</body>
+</html>
